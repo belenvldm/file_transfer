@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?> <!-- denomina que es XML -->
+<!-- el id es el dominio pero invertido con el nombre al final
+     la version es de la app -->
+<widget id="" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>File Transfer</name> <!-- Nombre de la APP -->
+    <description>
+        Upload de img <!-- Descripcion en phonegap, si no se especifica otra en el appleStore o googleStore, va a aparecer esta descripcion -->
+    </description>
+    <author email="info@appmiramevidrieras.esy.es" href="http://www.appmiramevidrieras.esy.es"> <!-- datos de contacto del autor -->
+        Belen Lopez del Monte
+    </author>
+    
+    <preference name="permissions" value="none" />
+    <preference name="phonegap-version" value="3.7.0" /> <!-- Version en la que se va a compilar, se puede elegir en base a lo que uno usa -->
+    <preference name="orientation" value="default" />  <!-- default es portait -->
+    <preference name="target-device" value="universal" /> <!-- si es para ciertos dispositivos -->
+    <preference name="fullscreen" value="false" /> <!-- si es full o no, si se ve el reloj y demas -->
+    <preference name="webviewbounce" value="true" /> 
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+
+    <plugin name="org.apache.cordova.camera" spec="0.3.6" source="pgb" />
+    <plugin name="org.apache.cordova.file" spec="1.3.3" source="pgb" />
+    <plugin name="org.apache.cordova.file-transfer" spec="0.5.0" source="pgb" />
+</widget>
